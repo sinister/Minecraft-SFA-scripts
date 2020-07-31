@@ -1,7 +1,6 @@
 import aiohttp
 import asyncio
 import json
-import time
 
 combos = open("accounts.txt").read().splitlines()
 
@@ -41,4 +40,3 @@ async def main():
 	await asyncio.wait(tasks)
 
 asyncio.run(main())
-time.sleep(10000)
