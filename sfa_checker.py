@@ -5,9 +5,9 @@ import time
 
 combos = open("accounts.txt").read().splitlines()
 
-check_for_nc = True
+#CHANGE TO TRUE IF YOU WANT TO CHECK IF ACCOUNT HAS CHANGED NAME IN LAST 30 DAYS
+check_for_nc = False
 
-start_sniping = False
 async def login(id, combo):
 	global check_for_nc
 	split = combo.split(":")
