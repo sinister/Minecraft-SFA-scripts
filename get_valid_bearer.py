@@ -21,7 +21,7 @@ with requests.Session() as session:
             uuid = data['selectedProfile']['id']
             token = data['accessToken']
             print("Token: " + token)
-            headers = {"Authorization": f"Bearer " + token}
+            headers = {"Authorization": "Bearer " + token}
             response2 = session.get("https://api.mojang.com/user/security/challenges", headers=headers)
             if response2.status_code == 200:
                 print("Token is now a valid bearer token for the next couple minutes.")
