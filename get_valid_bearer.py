@@ -26,6 +26,6 @@ with requests.Session() as session:
             if response2.status_code == 200:
                 print("Token is now a valid bearer token for the next couple minutes.")
             else:
-                print("Something went wrong. Response2 status code: " + response2.status_code)
+                print("Something went wrong. Response2 status code: " + str(response2.status_code))
     else:
         print("Something went wrong. Response status code: " + response.status_code)
