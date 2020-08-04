@@ -11,6 +11,6 @@ Set "check_for_nc" to True/False depending on if you want to check for namechang
 ## Get Valid Bearer
 Requires Python, the requests and json library.
 
-Used to get a valid bearer token from just the access token given by the authserver without a captcha (Only works for SFAs)
+Used to get a valid bearer token using the access token given by Yggdrasil.
 
 After that, it's fairly straight-forward and self explanatory but if you don't understand something, consult https://wiki.vg/Authentication#Authenticate
