@@ -28,4 +28,4 @@ with requests.Session() as session:
             else:
                 print("Something went wrong. Response2 status code: " + str(response2.status_code))
     else:
-        print("Something went wrong. Response status code: " + response.status_code)
+        print("Something went wrong. Response status code: " + str(response.status_code))
